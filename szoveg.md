@@ -12,6 +12,11 @@ Machine Learning
 3. CÉl:
    1. Olyan algorimusokat hoztak létre,amik maguktól tanulnak
    2. Akkor jó, ha jól teljesít új adatokra
-
 4. Feladat:
    1. y=a+b*x és ráillesztünk lineáris regressziót 
+5. Lineéris regresszió
+   1. folytonos változót jelzünk előre
+   2. y=a+b*x
+   3. a - tengelymetszet
+   4. b - meredekség
+   5. 
