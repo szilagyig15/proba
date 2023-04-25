@@ -19,4 +19,6 @@ Machine Learning
    2. y=a+b*x
    3. a - tengelymetszet
    4. b - meredekség
-   5. 
+6. Polinomiális Regresszió
+   1. overfittinget eredményez
+   2. jobb illeszkedést eredményez
