@@ -26,4 +26,7 @@
 - legegyszerűbb ML modell
 - lin kapcsolatot feltételez
 - y=a+bx, ahol y az intercept, b a slope
-- 
+
+## Polinomiális regresszió
+- jobb illeszkedés
+- overfittinget eredményez
