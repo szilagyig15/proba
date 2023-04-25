@@ -16,3 +16,5 @@ A machine learning céljai:
 1. egy olyan algoritmust hozzon létre, amelyek maguktól tanulnak, és jól prediktáljanak
 
 Akkor jó egy machine learning modell, ha jól teljesít az új adatokon.
+
+A lineáris regresszió a legegyszerűbb machine learning modell: itt folytonos változókat regresszálunk.
