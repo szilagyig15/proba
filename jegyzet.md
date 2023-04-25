@@ -21,4 +21,9 @@
 - könyv Aurelion Geron - Hands on machine learnig...
 - olyan új patternt találhatunk amit mi nem is láthatunk nélküle
 - a cél hogy új adatokon is jól funkcionáljon, adaptálni tudjon hozzá
+
+## Lináris regressszió
+- legegyszerűbb ML modell
+- lin kapcsolatot feltételez
+- y=a+bx, ahol y az intercept, b a slope
 - 
