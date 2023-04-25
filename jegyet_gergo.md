@@ -21,4 +21,6 @@ A lineáris regresszió a legegyszerűbb machine learning modell: itt folytonos 
 
 Polinomiális regresszió:
 - overfittinget eredményez
-- 
+
+Model fitting
+- loss function
