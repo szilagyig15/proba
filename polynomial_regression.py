@@ -26,6 +26,7 @@ def visualize_data_and_fit(x, y, model, degrees):
     plt.show()
 
 
+
 def main():
     coefficients = [1, 0.02, -0.002, 0.014]
     x_values = np.linspace(-10, 10, 10)
@@ -37,3 +38,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
