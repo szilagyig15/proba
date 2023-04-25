@@ -18,3 +18,7 @@ A machine learning céljai:
 Akkor jó egy machine learning modell, ha jól teljesít az új adatokon.
 
 A lineáris regresszió a legegyszerűbb machine learning modell: itt folytonos változókat regresszálunk.
+
+Polinomiális regresszió:
+- overfittinget eredményez
+- 
