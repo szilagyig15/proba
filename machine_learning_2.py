@@ -78,3 +78,4 @@ def print_coeffs(text, model):
     coeffs_str = ' '.join(np.format_float_positional(coeff, precision=4) for coeff in coeffs)
     print(text + coeffs_str)
 
+
