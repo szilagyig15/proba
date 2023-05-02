@@ -34,3 +34,8 @@ Machine Learning
    1. bias: mennyire tér el az előrejelzés a tény adattól (mennyire tér el)
    2. variance: mennyire változna az előrejelzés, ha másak a training adatok
    3. na nő a bias a variance csökken
+
+
+Május 2.
+1. Training set -  erre fitteljük a modellt
+2. Test set - hogyan performál a modell (hogyan viselkedik a modell olyan adatokon, amit még korábban nem látott)
