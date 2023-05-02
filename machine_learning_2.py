@@ -54,3 +54,25 @@ def creat_train_and_test_evaluate_polynomial_model(X_train, X_test, y_train, y_t
     return name, model, mse_on_test_set, coefficients_on_train_set
 
 
+def hyperparameter_search(X_train, y_train, X_test, y_test, from_degree=1, to_degree=15):
+    degrees = range(from_degree, to_degree)
+    best_degree, best_mse, best_model = None, float('inf'), None
+    d_mse = {}
+    for degree in degrees:
+        name, model, mse_on_test_set, coefficients_on_train_set = create_train_and_evaluate_polynomial_model(X_train, y_train, X_test, y_test, degree=degree)
+        d_mse[degree] = mse_on_test_set
+        print(f'for degree: {degree}, MSE: {mse_on_test_set}')
+        if mse_on_test_set < best_mse:
+            best_degree, best_mse, best_model = degree, mse_on_test_set, model
+    print(f'Best degree: {best_degree}, Best MSE: {best_mse}')
+    print_coeffs('Coefficients: ', best_model)
+    return best_model
+
+def print_coeffs(text, model):
+    if 'linear_regression' in model.named_steps.keys():
+        linreg = 'linear_regression'
+    else:
+        linreg = 'linearregression'
+    coeffs = np.concatenate(([model.named_steps[linreg].intercept_], model.named_steps[linreg].coef_[1:]))
+    coeffs_str = ' '.join(np.format_float_positional(coeff, precision=4) for coeff in coeffs)
+    print(text + coeffs_str)
