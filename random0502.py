@@ -25,8 +25,29 @@ def test_calc_asset_returns(mean, cov, size):
 
 
 # step3: atkonvertalni effektiv hozamokra
-def convert_continuous_to_simple(rets):
+def convert_to_simple(rets):
     return np.log(rets) - 1
 
 # step4: pf hozam = sulyozott eff hozamok osszege
+
+def calc_portfolio_return(a_returns, weights):
+    portfolio_return = np.sum(a_returns + weights, axis=1)
+    return portfolio_return
+
+
+def calc_portfolio_value(initial_value, a_pf_return):
+    return initial_value * (1+a_pf_return)
+
+
 # step5: pf erteke
+
+
+def calc_portfolio_value_all(initial_value, weights, std_x, std_y, corr, means, nsim):
+    covmat = calculate_covariance_matrix(std_x, std_y, corr)
+    rets = calc_asset_returns(means, covmat, nsim)
+    rets = convert_to_simple(rets)
+    pf_rets = calc_portfolio_value(rets, weights)
+    pf_values = calc_portfolio_value(initial_value, pf_rets)
+    return pf_values
+
+
